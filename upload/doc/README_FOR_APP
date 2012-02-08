@@ -1,2 +1,9 @@
-Use this README file to introduce your application and point to useful places in the API for learning more.
-Run "rake doc:app" to generate API documentation for your models, controllers, helpers, and libraries.
+Living Social interview coding test
+===================================
+
+The solution has been built using Ruby and Rails with the following versions:
+
+	ruby: 1.9.2
+	rails: 3.2.1
+	
+Tests are provided written using rSpec

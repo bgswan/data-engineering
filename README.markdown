@@ -1,3 +1,9 @@
+# Solution Provided
+The example solution is provided as a Rails application called upload.
+Details are provided in 
+
+	upload/doc/README_FOR_APP
+
 # Challenge for Software Engineer - Big Data 
 To better assess a candidates development skills, we would like to provide the following challenge.  You have as much time as you'd like (though we ask that you not spend more than a few hours) and may use any programming language or framework you'd like.  
 
