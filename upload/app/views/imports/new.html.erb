@@ -1,0 +1,9 @@
+<h1>Import Data From File</h1>
+
+<%= form_tag({:action => :create}, :multipart => true) do %>
+  <%= file_field_tag 'data' %>
+	<%= submit_tag "import" %>
+<% end %>
+
+<p><%= import_results(@database_import) %><p>
+
