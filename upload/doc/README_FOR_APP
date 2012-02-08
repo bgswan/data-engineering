@@ -6,4 +6,43 @@ The solution has been built using Ruby and Rails with the following versions:
 	ruby: 1.9.2
 	rails: 3.2.1
 	
+A .rvmrc file is included to switch to Ruby version 1.9.2
+	
 Tests are provided written using rSpec
+
+Installation
+------------
+
+From the upload directory run
+
+	bundle install
+	rails server
+	
+The application can be accessed at 
+
+	http://localhost:3000
+	
+Functionality
+-------------
+
+From the index page of the application, select a file to be uploaded and click 'import'. 
+The application will upload the file to the database and report the number of records uploaded and the total revenue from the records uploaded.
+The file should be in the format defined in the initial instructions.
+If no file is supplied, nothing is uploaded. If a file with an incorrect format is uploaded the import will fail and nothing will be uploaded, an error message will be reported.
+
+Purchasers are assumed to be unique by name.
+Merchants are assumed to be unique by name and address.
+Items are assumed to be unique by description, price and merchant.
+Purchases are not assumed to be unique.
+	
+Database Scheme
+---------------
+
+The sqlite database is used to persist the uploaded data.
+The sample input has been normalised as follows:
+
+Purchaser	Merchant	Item					Purchase
+	id			id				id						id
+	name		name			price					item_id
+					address		description		purchaser_id
+										merchant_id		quantity
